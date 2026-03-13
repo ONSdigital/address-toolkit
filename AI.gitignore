@@ -1,0 +1,23 @@
+# Ignore cache files
+.cache/
+.pip/
+.local/
+.config/
+.cache/
+
+# Ignore Python virtual environments
+venv/
+.venv/
+
+# Ignore Jupyter notebook checkpoints
+.ipynb_checkpoints/
+
+# Ignore other system files
+.DS_Store
+Thumbs.db
+
+# Ignore SSH keys and config
+.ssh/
+
+# Ignore Test Files
+test_files/

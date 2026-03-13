@@ -1,0 +1,2 @@
+pyspark==3.3.2
+RapidFuzz==3.14.3
