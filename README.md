@@ -1,5 +1,7 @@
 # Address Toolkit (In Development)
 
+![Python](https://img.shields.io/badge/python-3.10-blue)
+
 ## Introduction
 The address toolkit package is a lightweight package and has been designed to assist with working with address data registered as a `pyspark.sql.DataFrame`.
 The package includes functions for cleaning, validating and extracting addresses and address components.
@@ -56,3 +58,4 @@ Address Component lists and lookups have been created from Open Names dataset fr
 
 ## Example Usage
 See `tutorial.ipynb` for full use of all the functions within `cleaning`, `validating`, `extracting`, `contextualising` and `workflows`.
+
