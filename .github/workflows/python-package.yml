@@ -30,7 +30,7 @@ jobs:
         python -m pip install flake8 pytest
         if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
     - name: Test with pytest
-      uses: actions/setup-java@v4
+      uses: actions/setup-java@v5
       with:
         java-version: '8'
         distribution: temurin
