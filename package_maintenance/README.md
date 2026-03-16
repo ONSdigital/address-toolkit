@@ -23,3 +23,7 @@ The [Ordnance Survey Open Names](https://osdatahub.os.uk/data/downloads/open/Ope
 The resource lists and lookups will need to be updated within `address_toolkit.resources` to ensure latest releases are being used in the package.
 A Jupyter Notebook workflow has been created in `package_maintenance/` which will process the OS Open Names release. Notepad++ will also be required as part of this maintenance.
 The notebook is not adaptable to schema changes, therefore some manual review and maintenance per release may be required.
+
+The resources currently being derived from Ordnance Survey Open Names are:
+  Lists: towns, cities, villages, places, bays, suburbs, hamlets, counties and districts
+  Lookups: towns, villages, bays, suburbs, hamlets
