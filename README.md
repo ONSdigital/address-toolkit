@@ -55,10 +55,15 @@ df = clean_punctuation(df, 'address_column', create_flag = True, overwrite = Tru
 
 Note:
 For unit address level RegEx patterns, alternatives i.e. `flat_regex_alternative` are available which are less 'strict' in their matching.
-Address Component lists and lookups have been created from Open Names dataset from Ordnance Survey Data Hub [https://osdatahub.os.uk/data/downloads/open/OpenNames]
+
+Address Component lists and lookups have been created from Ordnance Survey Open Names.
+Contains OS data © Crown copyright and database right 2026.
+Licensed under the Open Government License v3.0 
+[https://osdatahub.os.uk/data/downloads/open/OpenNames]
 
 ## Example Usage
 See `tutorial.ipynb` for full use of all the functions within `cleaning`, `validating`, `extracting`, `contextualising` and `workflows`.
+
 
 
 
