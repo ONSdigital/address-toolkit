@@ -58,7 +58,7 @@ For unit address level RegEx patterns, alternatives i.e. `flat_regex_alternative
 
 Address Component lists and lookups have been created from [Ordnance Survey Open Names](https://osdatahub.os.uk/data/downloads/open/OpenNames).
 Contains OS data © Crown copyright and database right 2026.
-Licensed under the Open Government License v3.0
+Licensed under the Open Government License v3.0. This dataset is updated quarterly in January, April, July and October.
 
 Postcode processing is based upon the [Annex C - Valid post code format](https://assets.publishing.service.gov.uk/government/uploads/system/uploads/attachment_data/file/611951/Appendix_C_ILR_2017_to_2018_v1_Published_28April17.pdf) specification.
 
