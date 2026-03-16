@@ -1,0 +1,22 @@
+[build-system]
+requires = ["setuptools>=61", "wheel", "setuptools-scm"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "address-toolkit"
+description = "Toolkit for cleaning, validating, extracting and contextualising GB address data with PySpark."
+readme = "README.md"
+requires-python = "3.10"
+license = {text = "MIT"}
+authors = [
+  {name = "Dan Harris", email = "Dan.Harris@ONS.gov.uk"},
+  {name = "Ben Moscrop", email = "Ben.Moscrop@ONS.gov.uk"},
+  {name = "Stephen Rowlands", email = "Stephen.Rowlands@ONS.gov.uk"}]
+dependencies = ["pyspark==3.3.2", "RapidFuzz==3.14.3"]
+keywords = ["address", "postcode", "address-cleaning", "address-validating", "address-extracting", "address-contextualising"]
+
+[project.urls]
+Homepage = "https://github.com/ONSdigital/address-toolkit"
+Documentation = "https://github.com/ONSdigital/address-toolkit/blob/main/README.md"
+
+[tool.setuptools_scm]
