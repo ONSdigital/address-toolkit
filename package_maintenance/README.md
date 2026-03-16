@@ -19,7 +19,7 @@ Developers and maintainers will also need to ensure the latest guidance and corr
 The latest release on this guidance is [Annex C - Valid post code format](https://assets.publishing.service.gov.uk/government/uploads/system/uploads/attachment_data/file/611951/Appendix_C_ILR_2017_to_2018_v1_Published_28April17.pdf)
 
 ## Data Source Maintenance
-The Ordnance Survey Open Names dataset is released on a quarterly basis in January, April, July and October.
+The [Ordnance Survey Open Names](https://osdatahub.os.uk/data/downloads/open/OpenNames) dataset is released on a quarterly basis in January, April, July and October.
 The resource lists and lookups will need to be updated within `address_toolkit.resources` to ensure latest releases are being used in the package.
 A Jupyter Notebook workflow has been created in `package_maintenance/` which will process the OS Open Names release. Notepad++ will also be required as part of this maintenance.
 The notebook is not adaptable to schema changes, therefore some manual review and maintenance per release may be required.
