@@ -10,7 +10,7 @@ GitHub workflows have been put together such that any changes pushed to the `mai
 This will also test the packaging to ensure compatibility.
 
 ## Security (Dependabot)
-Dependabot has been configured in GitHub actions to provide recommendations and resolve issues on security issues. Some may not be able to be implemented due to 
+Dependabot has been configured in GitHub actions to provide recommendations and resolve security issues. Some may not be able to be implemented due to 
 causing compatibility issues with the python version and package dependencies. Such cases may require manual resolution.
 
 ## Package Development
