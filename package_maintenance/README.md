@@ -25,7 +25,7 @@ A Jupyter Notebook workflow has been created in `package_maintenance/` which wil
 The notebook is not adaptable to schema changes, therefore some manual review and maintenance per release may be required.
 
 The resources currently being derived from Ordnance Survey Open Names are:
-| Resource | Variable |
+| Resource Type | Variables |
 | --- | --- |
 | Lists | `town_list`, `city_list`, `village_list`, `place_list`, `district_list`, `bay_list`, `suburb_list`, `county_list`, `hamlet_list` |
 | Lookups | `town_lookup`, `village_lookup`, `bay_lookup`, `suburb_lookup`, `hamlet_lookup` |
