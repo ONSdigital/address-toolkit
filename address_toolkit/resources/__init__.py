@@ -5,7 +5,6 @@ from address_toolkit.resources.resources import (
                                                   bay_lookup,
                                                   block_regex,
                                                   city_list,
-                                                  city_lookup,
                                                   consecutive_letters_regex,
                                                   contextual_keywords,
                                                   county_list,
@@ -41,4 +40,4 @@ __all__ = ['town_list', 'contextual_keywords', 'village_list', 'hamlet_list', 's
            'flat_regex', 'room_regex', 'unit_regex', 'block_regex', 'apartment_regex', 'floor_regex', 'bay_list',
            'misc_numbers_regex', 'standalone_numbers_regex', 'txt_before_numbers_regex', 'end_address_numbers_regex',
            'start_address_numbers_regex', 'start_address_identifier_regex', 'end_address_identifier_regex', 'consecutive_letters_regex',
-           'town_lookup', 'village_lookup', 'bay_lookup', 'city_lookup', 'hamlet_lookup', 'suburb_lookup']
+           'town_lookup', 'village_lookup', 'bay_lookup', 'hamlet_lookup', 'suburb_lookup']

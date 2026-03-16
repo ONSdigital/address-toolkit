@@ -66,3 +66,40 @@ def test_workflows_import():
         success = 0
 
     assert success == 1
+
+def test_resource_list_imports():
+
+    try:
+        from address_toolkit.resources import (
+            town_list,
+            city_list,
+            bay_list,
+            place_list,
+            hamlet_list,
+            suburb_list,
+            district_list,
+            county_list,
+            village_list
+        )
+
+        success = 1
+    except Exception as error:
+        success = 0
+    
+    assert success == 1
+
+def test_resource_lookup_imports():
+
+    try:
+        from address_toolkit.resources import (
+            town_lookup,
+            bay_lookup,
+            village_lookup,
+            suburb_lookup,
+            hamlet_lookup
+        )
+        success = 1
+    except Exception as error:
+        success = 0
+    
+    assert success == 1
