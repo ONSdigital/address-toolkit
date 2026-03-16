@@ -18,7 +18,7 @@ If looking to extend the functionality provided by the package, ensure tests are
 Developers and maintainers will also need to ensure the latest guidance and correct processing of postcodes is being followed.
 The latest release on this guidance is [Annex C - Valid post code format](https://assets.publishing.service.gov.uk/government/uploads/system/uploads/attachment_data/file/611951/Appendix_C_ILR_2017_to_2018_v1_Published_28April17.pdf)
 
-## Data Source Maintenance
+## Data Sources
 The [Ordnance Survey Open Names](https://osdatahub.os.uk/data/downloads/open/OpenNames) dataset is released on a quarterly basis in January, April, July and October.
 The resource lists and lookups will need to be updated within `address_toolkit.resources` to ensure latest releases are being used in the package.
 A Jupyter Notebook workflow has been created in `package_maintenance/` which will process the OS Open Names release. Notepad++ will also be required as part of this maintenance.
