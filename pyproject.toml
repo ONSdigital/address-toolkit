@@ -4,6 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "address-toolkit"
+version = "1.0.0"
 description = "Toolkit for cleaning, validating, extracting and contextualising GB address data with PySpark."
 readme = "README.md"
 requires-python = "3.10"
