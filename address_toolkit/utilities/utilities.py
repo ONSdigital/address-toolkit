@@ -215,7 +215,7 @@ def rectify_postcode(address):
         match = re.search(postcode_regex, cleaned_component)
         if match:
             # Including length filter reduces likelihood of matching to inappropriate address parts
-            if match.group() == cleaned_component and len(cleaned_component) >= 6 and len(cleaned_component) <= 8:
+            if match.group() == cleaned_component and len(cleaned_component) >= 5 and len(cleaned_component) <= 7:
                 correct_postcode = ensure_postcode_format(cleaned_component.upper())
                 if correct_postcode not in address:
                     address = address.replace(component, correct_postcode)
@@ -247,7 +247,7 @@ def check_valid_postcode(address):
     is_valid_postcode = 0
 
     for postcode in postcodes:
-        if ("ZZ99" not in postcode.upper()) and not any(char in postcode.upper()[-3:] for char in disallowed_incode_characters) and len(postcode) >= 6 and len(postcode) <= 8:
+        if ("ZZ99" not in postcode.upper()) and not any(char in postcode.upper()[-3:] for char in disallowed_incode_characters) and len(postcode) >= 5 and len(postcode) <= 7:
             is_valid_postcode = 1
 
     return is_valid_postcode
