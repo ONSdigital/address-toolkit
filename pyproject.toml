@@ -13,7 +13,7 @@ authors = [
   {name = "Dan Harris", email = "Dan.Harris@ONS.gov.uk"},
   {name = "Ben Moscrop", email = "Ben.Moscrop@ONS.gov.uk"},
   {name = "Stephen Rowlands", email = "Stephen.Rowlands@ONS.gov.uk"}]
-dependencies = ["pyspark==3.3.2", "RapidFuzz==3.14.3"]
+dependencies = ["pyspark==3.3.2", "RapidFuzz==3.13.0"]
 keywords = ["address", "postcode", "address-cleaning", "address-validating", "address-extracting", "address-contextualising"]
 
 [project.urls]
