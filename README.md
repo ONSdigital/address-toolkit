@@ -5,7 +5,7 @@
 
 ## Introduction
 The address toolkit package supports the cleaning and processing of address data registered as a `pyspark.sql.DataFrame`.
-The package includes functions for cleaning, validating and extracting addresses and address components.
+The package includes functions for cleaning, validating, extracting and contextualising addresses and address components.
 Additionally, `workflows` have been created as an 'out-of-the-box' application combining the functions across `cleaning`, `validating` and `extracting`.
 
 To install the package, run:
