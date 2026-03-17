@@ -4,10 +4,10 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "address-toolkit"
-version = "1.0.0"
+version = ["version"]
 description = "Toolkit for cleaning, validating, extracting and contextualising GB address data with PySpark."
 readme = "README.md"
-requires-python = "=3.10"
+requires-python = ["requires-python"]
 license = {text = "MIT"}
 authors = [
   {name = "Dan Harris", email = "Dan.Harris@ONS.gov.uk"},
