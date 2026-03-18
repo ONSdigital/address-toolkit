@@ -2,7 +2,25 @@
 
 ## Package Release Versions
 When a new package release is required, developers/maintainers will need to create a new release with GitHub.
-A GitHub actions workflow has been configured such that when a new release is published, this will trigger the workflows to publish the package to PyPI.
+To publish the package to PyPI, ensure the version has been updated in the `pyproject.toml` file.
+Once updated, the following steps will need to be performed in an IDE.
+
+Install required publishing libraries
+```
+pip install twine, build
+```
+Build the package
+```
+python -m build
+```
+Check the package with twine
+```
+twine check dist/*
+```
+Publish the package to PyPI. Credentials from PyPI will need to be passed during this stage.
+```
+twine upload dist/*
+```
 
 ## Python Release Version
 The most stable Python release from testing in version 3.10. 
