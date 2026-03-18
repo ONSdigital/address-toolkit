@@ -38,7 +38,7 @@ df = clean_punctuation(df, 'address_column', create_flag = True, overwrite = Tru
 | `cleaning` | Contains functions to clean addresses | `clean_punctuation`, `denoise_addresses`, `deduplicate_addresses`, `deduplicate_postcodes`, `rectify_postcodes`, `standardise_street_types`, `prettify_addresses` |
 | `validating` | Contains functions to validate addresses | `validate_from_list`, `validate_from_regex`, `validate_postcodes` |
 | `extracting` | Contains functions to extract address components | `extract_from_list`, `extract_from_regex`, `extract_postcodes` |
-| `contextualising` | Contains functions to contextualise addresses | `contextualise_from_component` |
+| `contextualising` | Contains functions to contextualise addresses | `contextualise_from_lookup` |
 | `workflows` | Contains functions to streamline processing | `clean_addresses`, `validate_addresses`, `extract_address_components` |
 
 ## Supplementary Package Contents (Resources):
