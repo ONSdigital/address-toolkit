@@ -3,7 +3,7 @@
 ![Python](https://img.shields.io/badge/Python-3.10-blue)
 ![License](https://img.shields.io/badge/License-MIT-orange)
 
-<img src="address_toolkit.png" width="700", class = "center" />
+<img src="address_toolkit.png" width="700" class = "center" />
 
 ## Introduction
 The address toolkit package supports the cleaning and processing of address data registered as a `pyspark.sql.DataFrame`.
