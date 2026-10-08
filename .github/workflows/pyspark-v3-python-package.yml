@@ -1,23 +1,34 @@
 # This workflow will install Python dependencies, run tests and lint with a variety of Python versions
 # For more information see: https://docs.github.com/en/actions/automating-builds-and-tests/building-and-testing-python
 
-name: Python Package Version Testing
+name: Pyspark 3.x.x Python Package Version Testing
 
 on:
   push:
-    branches: [ "main" ]
+    branches: [ "main", "dependencies"]
   pull_request:
-    branches: [ "main" ]
+    branches: [ "main", "dependencies"]
 
 jobs:
   build:
-
     runs-on: ubuntu-latest
     strategy:
       fail-fast: false
       matrix:
-        python-version: ["3.9", "3.10"]
-
+        include:
+          - python-version: "3.8"
+            java-version: "8"
+          - python-version: "3.9"
+            java-version: "8"
+          - python-version: "3.10"
+            java-version: "8"
+          - python-version: "3.11"
+            java-version: "8"
+          - python-version: "3.12"
+            java-version: "8"
+          - python-version: "3.13"
+            java-version: "8"
+        
     steps:
     - uses: actions/checkout@v4
     - name: Set up Python ${{ matrix.python-version }}
@@ -28,11 +39,17 @@ jobs:
       run: |
         python -m pip install --upgrade pip
         python -m pip install flake8 pytest
-        if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
+    - name: Install Pyspark Version 3.x.x
+      run: |
+        pip install 'pyspark<4'
+    - name: Install Package
+      run: |
+        python -m pip install -e ".[dev]"
     - name: Test with pytest
       uses: actions/setup-java@v4
       with:
-        java-version: '8'
+        java-version: ${{ matrix.java-version }}
         distribution: temurin
     - run: |
         pytest
+
