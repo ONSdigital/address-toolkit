@@ -5,19 +5,27 @@ name: Python Package Version Testing
 
 on:
   push:
-    branches: [ "main" ]
+    branches: [ "main", "dependencies"]
   pull_request:
-    branches: [ "main" ]
+    branches: [ "main", "dependencies"]
 
 jobs:
+# Python Versions 3.9 and 3.10
   build:
-
     runs-on: ubuntu-latest
     strategy:
       fail-fast: false
       matrix:
-        python-version: ["3.9", "3.10"]
-
+        include:
+          - python-version: "3.9"
+            java-version: "8"
+          - python-version: "3.10"
+            java-version: "8"
+          - python-version: "3.11"
+            java-version: "11"
+          - python-version: "3.12"
+            java-version: "11"
+        
     steps:
     - uses: actions/checkout@v4
     - name: Set up Python ${{ matrix.python-version }}
@@ -32,7 +40,8 @@ jobs:
     - name: Test with pytest
       uses: actions/setup-java@v4
       with:
-        java-version: '8'
+        java-version: ${{ matrix.java-version }}
         distribution: temurin
     - run: |
         pytest
+
