@@ -1,6 +1,6 @@
 # Address Toolkit
 
-![Python](https://img.shields.io/badge/Python-3.10-blue)
+![Python](https://img.shields.io/badge/Python-3.9|3.10|3.11|3.12|3.13|3.14-blue)
 ![License](https://img.shields.io/badge/License-MIT-orange)
 
 <p align = "center">
