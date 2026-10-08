@@ -26,6 +26,8 @@ jobs:
             java-version: "8" # Changed from 11
           - python-version: "3.13"
             java-version: "8" # Changed from 11
+          - python-version: "3.14"
+            java-version: "8"
         
     steps:
     - uses: actions/checkout@v4
