@@ -17,7 +17,8 @@ dependencies = ["pyspark>=3.3.0; python_version >= '3.8' and python_version < '3
                 "pyspark>=3.4.0; python_version >= '3.11' and python_version < '3.13'",
                 "pyspark>=3.5.0; python_version >= '3.13' and python_version < '3.14'",
                 "pyspark>=4.0.0; python_version >= '3.14'",
-                "RapidFuzz==3.13.0; python_version >= '3.8'"]
+                "RapidFuzz>=3.0.0; python_version >= '3.9'",
+                "RapidFuzz>=2.0.0; python_version < '3.9'"]
 keywords = ["address", "postcode", "address-cleaning", "address-validating", "address-extracting", "address-contextualising"]
 
 [project.urls]
