@@ -2,7 +2,7 @@
 
 ![Python](https://img.shields.io/badge/Python-3.8|3.9|3.10|3.11|3.12|3.13|3.14-blue)
 ![License](https://img.shields.io/badge/License-MIT-orange)
-[![PyPI Downloads](https://static.pepy.tech/personalized-badge/address-toolkit?period=total&units=INTERNATIONAL_SYSTEM&left_color=GREY&right_color=GREEN&left_text=Downloads)](https://pepy.tech/projects/address-toolkit)
+[![PyPI Downloads](https://static.pepy.tech/personalized-badge/address-toolkit?period=total&units=INTERNATIONAL_SYSTEM&left_color=GREY&right_color=PURPLE&left_text=Downloads)](https://pepy.tech/projects/address-toolkit)
 
 
 <p align = "center">
