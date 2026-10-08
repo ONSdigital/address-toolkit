@@ -7,14 +7,14 @@ name = "address-toolkit"
 version = "1.2.1"
 description = "Toolkit for cleaning, validating, extracting and contextualising GB address data with PySpark."
 readme = "README.md"
-requires-python = ">=3.9,<3.13"
+requires-python = ">=3.9,<3.14"
 license = {text = "MIT"}
 authors = [
   {name = "Dan Harris", email = "Dan.Harris@ONS.gov.uk"},
   {name = "Ben Moscrop", email = "Ben.Moscrop@ONS.gov.uk"},
   {name = "Stephen Rowlands", email = "Stephen.Rowlands@ONS.gov.uk"}]
 dependencies = ["pyspark==3.3.2; python_version >= '3.9' and python_version < '3.11'",
-                "pyspark==3.5.2; python_version >= '3.11' and python_version < '3.13'", 
+                "pyspark==3.5.2; python_version >= '3.11' and python_version < '3.14'", 
                 "RapidFuzz==3.13.0; python_version >= '3.9'"]
 keywords = ["address", "postcode", "address-cleaning", "address-validating", "address-extracting", "address-contextualising"]
 
