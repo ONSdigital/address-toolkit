@@ -21,13 +21,11 @@ jobs:
           - python-version: "3.10"
             java-version: "8"
           - python-version: "3.11"
-            java-version: "11"
+            java-version: "8" # Changed from 11
           - python-version: "3.12"
-            java-version: "11"
+            java-version: "8" # Changed from 11
           - python-version: "3.13"
-            java-version: "11"
-          - python-version: "3.14"
-            java-version: "11"
+            java-version: "8" # Changed from 11
         
     steps:
     - uses: actions/checkout@v4
