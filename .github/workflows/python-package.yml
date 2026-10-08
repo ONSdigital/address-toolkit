@@ -10,7 +10,6 @@ on:
     branches: [ "main", "dependencies"]
 
 jobs:
-# Python Versions 3.9 and 3.10
   build:
     runs-on: ubuntu-latest
     strategy:
@@ -24,6 +23,10 @@ jobs:
           - python-version: "3.11"
             java-version: "11"
           - python-version: "3.12"
+            java-version: "11"
+          - python-version: "3.13"
+            java-version: "11"
+          - python-version: "3.14"
             java-version: "11"
         
     steps:
